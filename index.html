@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .boddy{
+            background-color: azure;
+        }
+        .container{
+            border: 2px solid yellow;
+            width: 1000px;
+            margin: auto;
+        }
+        .container-header{
+            /* phan dau */
+            border: 2px solid red;
+            font-size: 3em;
+            font-style: italic;
+            width: 1000px;
+            height: 100px;
+            margin: auto;
+            text-align: center;
+            background-color: yellow;
+            position: fixed;
+        }
+        /* phan than */
+        .container-main{
+            display: grid;
+            grid-template-columns: 300px 700px;
+            border: 2px solid rgb(85, 0, 255);
+            height: 1000px;
+            width: 1000px;
+            margin: auto;
+            margin-top: 100px;
+        }
+        /* phan ben trai */
+        .content-left{
+           border: 2px solid rgb(0, 119, 255);
+           width: 300px;
+           height: auto;
+           position: fixed;
+        }
+        .infor{
+            font-size: 3em;
+            /* border: 2px solid blue; */
+            text-align: center;
+            background-color: bisque;
+            border-radius: 2.5%;
+        }
+        .text-left{
+            text-align: center;
+            font-size: 1.5em;
+            height: 1000px;
+            width: auto;
+            margin-top: 5px;
+            background-color: aqua;
+        }
+        /* PHAN BEN TRAI */
+        /* phần bên phải */
+        .content-right{
+          border: 1px solid red;
+          width: 700px;
+          height: 1000px;
+          position: relative;
+          left: 300px;
+          overflow-y: scroll;
+        }
+        .titlle{
+            border: 2px solid blue;
+            font-size: 3em;
+            text-align: center;
+            font-style: italic;
+            background-color: aqua;
+        }
+        .text-right{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        }
+        #item-text{
+            border: 2px solid blue;
+            font-size: 1.5em;
+            height: 200px;
+            font-family:'Times New Roman';
+            padding: 20px;
+            text-indent: 20px;
+            border-radius: 2.5%;
+            margin: 10px;
+            background-color: bisque;
+            transition: filter 0.3s ease;
+            position: relative;
+        }
+        .box1,.box2,.box3 {
+            /* border: 2px solid red; */
+            height: auto;
+            border-radius: 2.5%;
+            margin: 20px;
+
+        }
+        .rounded-image{
+            width: 640px;
+            height: auto;
+            border-radius: 2.5%;
+            overflow: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-header">
+            <b>HAPPY TEACHER'S DAY</b>
+        </div>
+        </div>
+        <div class="container-main">
+            <div class="content-left">
+                <div class="left-titlle">
+                    <div class="infor">
+                        <b>Infor</b>
+                    </div>
+                </div>
+                <div class="text-left">
+                    <b>NGÔ THỊ THANH TRÚC</b>
+                    <br>
+                    <br><b>GIÁO VIÊN TIẾNG ANH</b>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="right-titlle">
+                    <div class="titlle">
+                        <b>LỜI CHÚC 20/11</b>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <div class="text">
+                        <div id="item-text">
+                            <p>Nhân ngày 20/11, em xin gửi đến cô những lời chúc tốt đẹp nhất. Chúc cô luôn mạnh khỏe, hạnh phúc và thành công trong sự nghiệp giáo dục. Cảm ơn cô đã luôn tận tâm và yêu thương chúng em, truyền đạt cho chúng em những kiến thức quý báu và những bài học cuộc sống. </p>
+                        </div>
+                        <div class="box1">
+                            <img src="D:\web\imgae\chitruc.jpg" alt="" class="rounded-image">
+                        </div>
+                        <div class="box2">
+                            <img src="D:\web\imgae\467455468_1269317314261833_6637318695621173215_n.jpg" alt="" class="rounded-image">
+                        </div>
+                        <div class="box3">
+                            <img src="D:\web\imgae\394001005_636307251994076_9076992282454282852_n.jpg" alt="" class="rounded-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    
+</body>
+</html>
